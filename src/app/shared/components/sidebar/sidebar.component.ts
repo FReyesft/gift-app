@@ -13,6 +13,11 @@ export class SidebarComponent implements OnInit {
     return this.gifsService.tagsHistory;
   }
 
+  search(tag: string) {
+    this.gifsService.searchTag(tag)
+  }
+
+
   ngOnInit() {
   }
 
