@@ -1,0 +1,14 @@
+<div class="card mb-2 bg-dark text-center">
+  <app-lazyImage
+    [url]="gif.images.downsized_medium.url"
+    [alt]="gif.title || ''"
+  ></app-lazyImage>
+  <!--<img
+    [src]="gif.images.downsized_medium.url"
+    [alt]="gif.title"
+    class="card-img-top"
+  />-->
+  <div *ngIf="gif.title" class="card-body">
+    <p class="card-text text-white">{{ gif.title }}</p>
+  </div>
+</div>
